@@ -1,0 +1,18 @@
+
+version: "3"
+services:
+
+  linux_container: 
+
+    ports : 
+      - "8001:80"
+    links:
+      - mongo:mongo
+    command: "sails lift"
+    volumes: 
+      - "C:\\Users\\edge pc\\Desktop\\cafe\\sail_with_Kingstuffy\\Docker:/server"
+    build : "C:\\Users\\edge pc\\Desktop\\cafe\\sail_with_Kingstuffy"
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
