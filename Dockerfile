@@ -16,6 +16,6 @@ WORKDIR /sail_with_kingstuffy
 # they will be copied to the container
 # ADD app /app
 
-CMD ["/sail_with_kingstuffy/app.js", "--no-daemon"]
+# CMD ["/sail_with_kingstuffy/app.js", "--no-daemon"]
 
 RUN cd /sail_with_kingstuffy

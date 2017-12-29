@@ -28,7 +28,7 @@ module.exports.policies = {
 
   // '*': true,
   
-  User:{
+  UserController:{
     '*': 'isAuthenticated'
   }
 
